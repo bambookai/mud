@@ -12,7 +12,7 @@ namespace MUD
 
         
         static void Main(string[] args)
-        {
+        {           
             Console.WriteLine("游戏初始化....");
             Initialize initialize = new Initialize();
             Game game = new Game();
@@ -24,13 +24,12 @@ namespace MUD
             Console.WriteLine("2:退出游戏\r\n");
             while (true) {
                 option = Console.ReadLine();
-                if (int.Parse(option) == 1)
+                if (option == "1")
                 {
                     game.startGanme();
 
-
                 }
-                else if (int.Parse(option) == 2)
+                else if (option == "2")
                 {
                     break;
                 }
